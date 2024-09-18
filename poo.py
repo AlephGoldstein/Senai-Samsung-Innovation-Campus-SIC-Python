@@ -9,4 +9,13 @@ def criar_conta(numero_conta,titular,saldo,limite):
     return conta
 conta1 = criar_conta(125154,"jorge",1500,5000)
 conta2 = criar_conta(125154,"jorge",1500,5000)
-print(conta1,conta2)
+def extrato(conta):
+    print("numero: {}\n saldo: {}".format(conta['numero'],conta['saldo']))
+    return conta['saldo']
+def deposito(conta,valor):
+    ValorConta = extrato(conta)
+    ValorConta += valor
+    print("seu valor agora é ",ValorConta)
+    conta['saldo'] = ValorConta
+
+

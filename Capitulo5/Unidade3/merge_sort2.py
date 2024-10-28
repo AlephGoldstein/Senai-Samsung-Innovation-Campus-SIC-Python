@@ -22,3 +22,6 @@ def merge2(S, low, mid, high):
 			R.append(S[i])
 	for k in range(len(R)):
 		S[low + k] = R[k]
+S = [27, 10, 12, 20, 25, 13, 15, 22]
+mergesort2(S, 0, len(S) - 1)
+print(S)

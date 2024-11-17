@@ -1,0 +1,10 @@
+from stacks import Stack
+stack = Stack()
+stack.push("Banana")
+stack.push("Maçã")
+stack.push("Tomate")
+stack.pop()
+stack.push("Morango")
+stack.push("Uva")
+stack.pop()
+print(stack.stack)
